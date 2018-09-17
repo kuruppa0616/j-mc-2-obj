@@ -21,16 +21,16 @@ public class CheckUpdate {
 		Thread t = new Thread(new Runnable() {			
 			@Override
 			public void run() {
-				if(isAvailable())
-				{
-					Log.info("New version of the program is available!");
-					if (Options.uiMode == UIMode.GUI)
-						MainWindow.main.highlightUpdateButton();
-				}
-				else
-				{
-					Log.info("No update available...");
-				}				
+//				if(isAvailable())
+//				{
+//					Log.info("New version of the program is available!");
+//					if (Options.uiMode == UIMode.GUI)
+//						MainWindow.main.highlightUpdateButton();
+//				}
+//				else
+//				{
+//					Log.info("No update available...");
+//				}
 			}
 		});
 		t.setDaemon(true);
